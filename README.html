@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barouk 155 – تجربة مغربية</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --main:#32513b;
+  --gold:#c9a44c;
+  --bg:#f9f7f1;
+}
+
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background:var(--bg);
+  color:#333;
+}
+
+/* NAV */
+nav{
+  background:#fff;
+  padding:1rem 2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+nav h1{
+  font-family:'Amiri', serif;
+  color:var(--main);
+  margin:0;
+}
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+nav a:hover{color:var(--gold);}
+
+/* HERO */
+header{
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1541518763669-27fef04b14ea");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  padding:6rem 1rem;
+  text-align:center;
+}
+header h2{
+  font-family:'Amiri', serif;
+  font-size:3rem;
+  margin:0;
+}
+header p{
+  max-width:600px;
+  margin:1rem auto 2rem;
+}
+header button{
+  padding:.8rem 2rem;
+  border:none;
+  background:var(--gold);
+  color:#fff;
+  font-size:1rem;
+  border-radius:30px;
+  cursor:pointer;
+  margin:5px;
+}
+header button:hover{opacity:.9;}
+
+/* SECTIONS */
+section{
+  width:90%;
+  max-width:1100px;
+  margin:3rem auto;
+  text-align:center;
+}
+section h3{
+  font-family:'Amiri', serif;
+  font-size:2rem;
+  color:var(--main);
+  margin-bottom:1rem;
+}
+
+/* CONTACT */
+.contact{
+  background:#fff;
+  padding:3rem 1rem;
+  border-top:4px solid var(--gold);
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,.1);
+}
+.contact p{
+  margin:.5rem 0;
+  font-size:1.1rem;
+}
+.contact a{
+  text-decoration:none;
+  color:var(--main);
+  font-weight:600;
+}
+.contact a:hover{color:var(--gold);}
+
+/* FOOTER */
+footer{
+  background:var(--main);
+  color:#fff;
+  text-align:center;
+  padding:1.5rem;
+  margin-top:2rem;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Barouk 155</h1>
+  <div>
+    <a href="#about">من نحن</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">اتصل بنا</a>
+  </div>
+</nav>
+
+<header>
+  <h2>Authentic Moroccan Experience</h2>
+  <p>Traditional flavors inspired by Moroccan heritage, served with modern elegance.</p>
+  <!-- زر اكتشف المزيد -->
+  <button onclick="document.getElementById('menu-image').scrollIntoView({behavior:'smooth'})">
+    Discover More
+  </button>
+  <!-- زر الاتصال المباشر -->
+  <button onclick="window.location.href='tel:0680721353'" style="background:#32513b;">
+    Order Now
+  </button>
+</header>
+
+<section id="about">
+  <h3>من نحن</h3>
+  <p>نقدّم لك أفضل الأطباق المغربية بلمسة حديثة.</p>
+</section>
+
+<section id="services">
+  <h3>الخدمات</h3>
+  <p>⚡ نسرع في طلباتكم</p>
+</section>
+
+<!-- MENU IMAGE SECTION -->
+<section id="menu-image">
+  <h3>قائمة الطعام</h3>
+  <img src="/attachments/w3i87n2KdqoVRZjHfotCm.jpeg" alt="Barouk 155 Menu" style="max-width:100%;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.2);">
+</section>
+
+<section class="contact" id="contact">
+  <h3>اتصل بنا</h3>
+  <p>📍 مراكش، المغرب</p>
+  <p><a href="tel:0680721353">📞 0680721353</a></p>
+  <p>🕒 مفتوح يوميًا: 12:00 – 23:00</p>
+</section>
+
+<footer>
+  <p>© 2026 Barouk 155 – كل الحقوق محفوظة</p>
+</footer>
+
+</body>
+  </html>
